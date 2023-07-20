@@ -37,31 +37,31 @@
 2. ### Remove Dublicate from array
 
    #### Method 1 : Remove duplicates from an array and return unique values in O(n) complexity.
-   ```
-      let arr3 = [1,4,3,5,7,2,5,8,3,5,9,1,8];
+      ```
+         let arr3 = [1,4,3,5,7,2,5,8,3,5,9,1,8];
 
-      let finalarr = [...new Set(arr3)];
-      console.log(finalarr);
+         let finalarr = [...new Set(arr3)];
+         console.log(finalarr);
 
-      let arr5 =[1,2,3,4,3,6,5,4];
+         let arr5 =[1,2,3,4,3,6,5,4];
 
-   ```
+      ```
 
    #### Method 2 : Remove duplicates from an array and return unique values in O(n) complexity.
-   ```
-      function unique(arr) {
-      let items = {}
-      arr.forEach( (item) => {
-         if (!items[item]) {
+      ```
+         function unique(arr) {
+         let items = {}
+         arr.forEach( (item) => {
+            if (!items[item]) {
 
-            items[item] = item;
+               items[item] = item;
+            }
+            });	
+         return Object.values (items);
          }
-         });	
-      return Object.values (items);
-      }
-      console.log(unique(arr5));
+         console.log(unique(arr5));
 
-   ```
+      ```
 
 1. ### Print all duplicate elements of an array
 
@@ -92,48 +92,48 @@
 
 1. ### Find the frequency of elements in array
 
- #### Method 1: Using Reduce method of array
+   #### Method 1: Using Reduce method of array
 
-   ```
-      let arr = ["hello", "world", "java", "hello", "java"]
+      ```
+         let arr = ["hello", "world", "java", "hello", "java"]
 
-      function countWord(p) {
-         let result = p.reduce((allNames, name) => {
+         function countWord(p) {
+            let result = p.reduce((allNames, name) => {
 
-            if (name in allNames) {
-               allNames[name]++
-            } else {
-               allNames[name] = 1
-            }
+               if (name in allNames) {
+                  allNames[name]++
+               } else {
+                  allNames[name] = 1
+               }
 
-            return allNames;
-         },{});
+               return allNames;
+            },{});
 
-         return result;
-      }
-      console.log(countWord(arr));
+            return result;
+         }
+         console.log(countWord(arr));
 
-   ```
+      ```
 
-  #### Method 2: Using an Object
+   #### Method 2: Using an Object
 
-   ```
-      let arr2 = ["hello", "world", "java", "hello", "java"]
+      ```
+         let arr2 = ["hello", "world", "java", "hello", "java"]
 
-      function countWord(p) {
-         var count = {};
-         p.forEach( (item) => {
-            if (count[item]) {
-               count[item]++
-            } else {
-               count[item] =1
-            }
-         })
-         return count;
-      }
-      console.log(countWord(arr));
+         function countWord(p) {
+            var count = {};
+            p.forEach( (item) => {
+               if (count[item]) {
+                  count[item]++
+               } else {
+                  count[item] =1
+               }
+            })
+            return count;
+         }
+         console.log(countWord(arr));
 
-   ```
+      ```
 
 1. ### Group items on the basis of age of given array of object
 
