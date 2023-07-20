@@ -31,7 +31,8 @@
          }
       }
       console.log(mui(2)(3)(4));
-      
+
+      **Output:** 24
    ```
 
 2. ### Remove Dublicate from array
@@ -43,7 +44,7 @@
          let finalarr = [...new Set(arr3)];
          console.log(finalarr);
 
-         let arr5 =[1,2,3,4,3,6,5,4];
+         **Output:** [1, 4, 3, 5, 7, 2, 8, 9]
 
       ```
 
@@ -61,6 +62,7 @@
          }
          console.log(unique(arr5));
 
+         **Output:** 
       ```
 
 1. ### Print all duplicate elements of an array
@@ -76,18 +78,22 @@
       }
       console.log(printDuplicates(arr6));
 
+      **Output:** 
    ```
 
 3. ### Find the nth largest element in a sorted array
    ```
       let arr4 = [12,34,21,14,67,35,64,25];
       let n = 2;
-      arr4.sort((a, b) => a - b);
+      let sortArr = arr4.sort((a, b) => a - b);
 
       const nthLargest = arr4[arr4.length - n] // if n= 2 output = 64
 
+      console.log(sortarr);
       console.log(nthLargest);
 
+      **Output:**  12, 14, 21, 25, 34, 35, 64, 67
+               64 
    ```
 
 1. ### Find the frequency of elements in array
@@ -153,6 +159,19 @@
       }
       console. log(groupBy(people));
       
+      **Output:** {
+                     20: [{
+                        age: 20,
+                        name: "Max"
+                     }, {
+                        age: 20,
+                        name: "Jane"
+                     }],
+                     21: [{
+                        age: 21,
+                        name: "Alice"
+                     }]
+                  }
    ```
 
 1. ### Collect books from array of objects and return collection of books as an array
@@ -178,6 +197,7 @@
 
       console.log(result);
 
+      **Output:** ["Bible", "Harry Potter", "War and peace", "Romeo and Juliet", "The Lord of the Rings", "The Shining"]
    ```
 
 1. ### Javascript Program To Check Whether Two Strings Are Anagram Of Each Other
@@ -202,6 +222,8 @@
          }
       }
       charCheck("Apple","papel");
+
+      **Output:** matching
 
    ```
    
