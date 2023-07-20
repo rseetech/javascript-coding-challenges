@@ -36,7 +36,7 @@
 
 2. ### Remove Dublicate from array
 
-   ## Method 1 : Remove duplicates from an array and return unique values in O(n) complexity.
+   #### Method 1 : Remove duplicates from an array and return unique values in O(n) complexity.
    ```
       let arr3 = [1,4,3,5,7,2,5,8,3,5,9,1,8];
 
