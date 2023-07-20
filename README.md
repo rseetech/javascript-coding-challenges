@@ -47,7 +47,7 @@
 
    ```
 
-   ## Method 2 : Remove duplicates from an array and return unique values in O(n) complexity.
+   #### Method 2 : Remove duplicates from an array and return unique values in O(n) complexity.
    ```
       function unique(arr) {
       let items = {}
@@ -92,7 +92,7 @@
 
 1. ### Find the frequency of elements in array
 
- ## Method 1: Using Reduce method of array
+ #### Method 1: Using Reduce method of array
 
    ```
       let arr = ["hello", "world", "java", "hello", "java"]
@@ -115,7 +115,7 @@
 
    ```
 
-  ## Method 2: Using an Object
+  #### Method 2: Using an Object
 
    ```
       let arr2 = ["hello", "world", "java", "hello", "java"]
