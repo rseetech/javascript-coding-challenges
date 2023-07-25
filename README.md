@@ -23,6 +23,20 @@
    >
    >4. Click here for [React Create Tic Tac Toe Game](https://github.com/rseetech/react-create-tic-tac-toe-game) more information.
 
+
+### Table of Contents
+
+| No. | Questions                                                                              |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [Multiplie values](#multiplie-values)           |
+| 2   | [Remove Dublicate from array](#remove-dublicate-from-array)                        |
+| 3   | [Print all duplicate elements of an array](#print-all-duplicate-elements-of-an-array)                   |
+| 4   | [Find the nth largest element in a sorted array](#find-the-nth-largest-element-in-a-sorted-array)                   |
+| 5   | [Find the frequency of elements in array](#find-the-frequency-of-elements-in-array)                   |
+| 6   | [Group items on the basis of age of given array of object](#group-items-on-the-basis-of-age-of-given-array-of-object)                   |
+| 7   | [Collect books from array of objects and return collection of books as an array](#collect-books-from-array-of-objects-and-return-collection-of-books-as-an-array)                   |
+| 7   | [Anagram Javascript Program To Check Whether Two Strings Are Anagram Of Each Other ](#javascript-program-to-check-whether-two-strings-are-anagram-of-each-other)                   |
+
 1. ### Multiplie values 
    
    ```
@@ -37,6 +51,8 @@
 
       **Output:** 24
    ```
+
+   **[⬆ Back to Top](#table-of-contents)**
 
 2. ### Remove Dublicate from array
 
@@ -68,7 +84,9 @@
          **Output:** 
       ```
 
-1. ### Print all duplicate elements of an array
+   **[⬆ Back to Top](#table-of-contents)**
+
+3. ### Print all duplicate elements of an array
 
    ```
       let arr6 =[1,1,5,6,7,8,9,3,2,2,4,4];
@@ -83,8 +101,9 @@
 
       **Output:** 
    ```
+   **[⬆ Back to Top](#table-of-contents)**
 
-3. ### Find the nth largest element in a sorted array
+4. ### Find the nth largest element in a sorted array
    ```
       let arr4 = [12,34,21,14,67,35,64,25];
       let n = 2;
@@ -98,8 +117,9 @@
       **Output:**  12, 14, 21, 25, 34, 35, 64, 67
                64 
    ```
+   **[⬆ Back to Top](#table-of-contents)**
 
-1. ### Find the frequency of elements in array
+5. ### Find the frequency of elements in array
 
    #### Method 1: Using Reduce method of array
 
@@ -143,8 +163,9 @@
          console.log(countWord(arr));
 
       ```
+   **[⬆ Back to Top](#table-of-contents)**
 
-1. ### Group items on the basis of age of given array of object
+6. ### Group items on the basis of age of given array of object
 
    ```
       let people =[{name: "Alice", age: 21 },{name: "Max", age: 20 },{name: 'Jane', age: 20 }];
@@ -177,7 +198,9 @@
                   }
    ```
 
-1. ### Collect books from array of objects and return collection of books as an array
+   **[⬆ Back to Top](#table-of-contents)**
+
+7. ### Collect books from array of objects and return collection of books as an array
 
    ```
       let friends = [{
@@ -202,8 +225,9 @@
 
       **Output:** ["Bible", "Harry Potter", "War and peace", "Romeo and Juliet", "The Lord of the Rings", "The Shining"]
    ```
+   **[⬆ Back to Top](#table-of-contents)**
 
-1. ### Javascript Program To Check Whether Two Strings Are Anagram Of Each Other
+8. ### Anagram Javascript Program To Check Whether Two Strings Are Anagram Of Each Other
 
    ```
       function charCheck( val1, val2){
@@ -230,3 +254,4 @@
 
    ```
    
+   **[⬆ Back to Top](#table-of-contents)**
