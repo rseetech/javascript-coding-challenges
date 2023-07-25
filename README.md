@@ -35,7 +35,7 @@
 | 5   | [Find the frequency of elements in array](#find-the-frequency-of-elements-in-array)                   |
 | 6   | [Group items on the basis of age of given array of object](#group-items-on-the-basis-of-age-of-given-array-of-object)                   |
 | 7   | [Collect books from array of objects and return collection of books as an array](#collect-books-from-array-of-objects-and-return-collection-of-books-as-an-array)                   |
-| 7   | [Anagram Javascript Program To Check Whether Two Strings Are Anagram Of Each Other ](#javascript-program-to-check-whether-two-strings-are-anagram-of-each-other)                   |
+| 8   | [Anagram Javascript Program To Check Whether Two Strings Are Anagram Of Each Other ](#javascript-program-to-check-whether-two-strings-are-anagram-of-each-other)                   |
 
 1. ### Multiplie values 
    
