@@ -37,7 +37,7 @@
 | 7   | [Collect books from array of objects and return collection of books as an array](#collect-books-from-array-of-objects-and-return-collection-of-books-as-an-array)                   |
 | 8   | [Anagram Javascript Program To Check Whether Two Strings Are Anagram Of Each Other ](#javascript-program-to-check-whether-two-strings-are-anagram-of-each-other)                   |
 
-1. ### Multiplie values 
+1. ### Multiplie values (Currying function)
    
    ```
       function mui(a){
@@ -254,4 +254,50 @@
 
    ```
    
+   **[⬆ Back to Top](#table-of-contents)**
+
+10. ### Using currying solve problem 
+
+   Solve this problem : f(g(h(i(j(x)))))
+
+   ```
+      // Step 1: Create individual functions
+      function f(x) {
+      return x + 1;
+      }
+
+      function g(x) {
+      return x * 2;
+      }
+
+      function h(x) {
+      return x - 3;
+      }
+
+      function i(x) {
+      return x / 2;
+      }
+
+      // Step 2: Implement currying
+      function curry(fn) {
+      return function curried(...args) {
+         if (args.length >= fn.length) {
+            return fn(...args);
+         } else {
+            return function (...nextArgs) {
+            return curried(...args.concat(nextArgs));
+            };
+         }
+      };
+      }
+
+      // Step 3: Compose the curried functions
+      const composedFunction = curry(f)(curry(g)(curry(h)(curry(i))));
+
+      // Usage
+      const result = composedFunction(5); // Pass the initial value 'x' as an argument
+      console.log(result); // Output: 9
+
+   ```
+
    **[⬆ Back to Top](#table-of-contents)**
