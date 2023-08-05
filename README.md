@@ -301,3 +301,19 @@
    ```
 
    **[⬆ Back to Top](#table-of-contents)**
+
+2. ### Solve problem and find output
+
+   ```
+      const circle = {
+         radius: 10,
+         diameter() { return this.radius * 2; },
+
+         perimeter: () => 2 * Math.PI * circle.radius,
+      };
+      console.log(circle.diameter()); // 20
+      console.log(circle.perimeter()); // 62.83185307179586
+
+   ```
+   
+   **[⬆ Back to Top](#table-of-contents)**
