@@ -38,19 +38,37 @@
 | 8   | [Anagram Javascript Program To Check Whether Two Strings Are Anagram Of Each Other ](#javascript-program-to-check-whether-two-strings-are-anagram-of-each-other)                   |
 
 1. ### Multiplie values (Currying function)
+
+   **Method 1.**
    
-   ```
-      function mui(a){
-         return function(b){
-            return function (c){
-               return a*b*c; // 24
+      ```
+         function mui(a){
+            return function(b){
+               return function (c){
+                  return a*b*c; // 24
+               }
             }
          }
-      }
-      console.log(mui(2)(3)(4));
+         console.log(mui(2)(3)(4));
 
-      **Output:** 24
-   ```
+         **Output:** 24
+      ```
+   **Method 2.** 
+
+      ```
+         function add(a){
+            return function (b){
+            if(b === undefined){
+               return a;
+            } else {
+               return add(a+b);
+            }
+         }
+         }
+         console.log(add(1)(2)()); // 3
+         console.log(add(1)(2)(5)()); // 8
+
+      ```
 
    **[⬆ Back to Top](#table-of-contents)**
 
@@ -316,4 +334,19 @@
 
    ```
    
+   **[⬆ Back to Top](#table-of-contents)**
+
+11. ### Deep copy and Shallow copy
+
+   **Exapmle :**
+
+   ```
+      let obj = {name: "Ramesh", profession: {des: "lead", location: "somewhere"}};
+
+      const shallowcopy = {...obj};
+      console.log(shallowcopy);
+
+      const deepcopy = JSON.parse(JSON.stringify(obj));
+      console.log(deepcopy);
+   ```
    **[⬆ Back to Top](#table-of-contents)**
