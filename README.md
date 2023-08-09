@@ -350,3 +350,52 @@
       console.log(deepcopy);
    ```
    **[⬆ Back to Top](#table-of-contents)**
+
+12. ### WAP to findPairsWithSum of 7 in array?
+
+   **Example:** 
+
+   ```
+      function findPairsWithSum(arr, targetSum) {
+         const pairs = [];
+         const numMap = {};
+         for (const num of arr) {
+            const complement = targetSum - num;
+            if (numMap[complement]) {
+               pairs.push([num, complement]);
+            }
+            numMap[num] = true;
+         }
+         return pairs;
+      }
+      const array = [2, 4, 3, 5, 6, 1, 7];
+      const target = 7;
+      const result = findPairsWithSum(array, target);
+      console.log("Pairs with sum", target, ":", result);
+   ```
+
+   **[⬆ Back to Top](#table-of-contents)**
+
+13. ### WAP to findMissingNumbers from given array?
+
+   **Example:** 
+
+   ```
+      function findMissingNumbers(arr) {
+         const maxNum = Math.max(...arr);
+         const minNum = Math.min(...arr);
+         const missingNumbers = [];
+         for (let i = minNum; i <= maxNum; i++) {
+            if (!arr.includes(i)) {
+               missingNumbers.push(i);
+            }
+         }
+         return missingNumbers;
+      }
+      const numbers = [2, 4, 7, 9, 13];
+      const missingNumbers = findMissingNumbers(numbers);
+      console.log("Missing numbers:", missingNumbers);
+      
+   ```
+   
+   **[⬆ Back to Top](#table-of-contents)**   
